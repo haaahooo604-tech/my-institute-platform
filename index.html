@@ -9,6 +9,13 @@
 <style>
 :root{--navy:#102b46;--blue:#1769aa;--cyan:#20a4c7;--bg:#f3f7fb;--ink:#172536;--muted:#66798a;--line:#dce5ed;--white:#fff;--red:#b42318;--green:#137547}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);font-family:Tahoma,Arial,sans-serif;color:var(--ink);line-height:1.7}button,input,select,textarea{font:inherit}button{cursor:pointer;border:0;border-radius:11px;padding:10px 15px;font-weight:700}.primary{background:var(--blue);color:white}.soft{background:#eaf5fd;color:var(--blue)}.danger{background:#fff0ef;color:var(--red)}.muted{color:var(--muted);font-size:13px}header{background:linear-gradient(120deg,#102b46,#1769aa);color:white;padding:16px max(16px,calc((100% - 1180px)/2));display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.brand{display:flex;gap:12px;align-items:center}.logo{width:46px;height:46px;border-radius:14px;background:#ffffff20;display:grid;place-items:center;font-size:25px}h1{font-size:clamp(17px,3vw,24px);margin:0}header p{margin:0;color:#d9eaff;font-size:12px}nav{display:flex;gap:7px;flex-wrap:wrap}nav button{background:#ffffff18;color:white;border:1px solid #ffffff40;font-size:13px}nav button.active{background:white;color:var(--navy)}main{max-width:1180px;margin:24px auto;padding:0 15px}.hero,.panel,.card,.stat{background:white;border:1px solid var(--line);border-radius:17px}.hero{padding:25px;display:grid;grid-template-columns:1.4fr .6fr;gap:18px;align-items:center}.hero h2{font-size:clamp(24px,4vw,36px);line-height:1.4;color:var(--navy);margin:10px 0}.art{background:linear-gradient(145deg,#e7f5ff,#d5e8f8);border-radius:15px;min-height:160px;display:grid;place-items:center;font-size:66px}.tag{display:inline-block;background:#eaf5fd;color:#1769aa;border-radius:30px;padding:3px 11px;font-size:12px}.section-title{font-size:21px;color:var(--navy);margin:25px 0 12px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.card{padding:16px}.card h3{margin:5px 0;color:var(--navy);font-size:16px}.card p{margin:0;color:var(--muted);font-size:13px}.panel{padding:21px;margin:16px auto}.panel h2{margin:0;color:var(--navy)}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{display:flex;flex-direction:column;gap:5px}.full{grid-column:1/-1}label{font-size:13px;font-weight:bold}input,select,textarea{width:100%;border:1px solid #ccd8e3;border-radius:10px;padding:11px;background:white;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid #b8ddf8;border-color:var(--blue)}.notice{background:#fff8e8;border:1px solid #f1dfb6;color:#73531b;padding:12px;border-radius:10px;font-size:13px;margin:13px 0}.status{padding:11px;border-radius:9px;margin-top:12px;font-size:13px;display:none;background:#edf7ff;color:#14588a}.status.error{display:block;background:#fff0ef;color:var(--red)}.status.ok{display:block;background:#eaf8f0;color:var(--green)}.hidden{display:none!important}.actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:12px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:15px 0}.stat{padding:13px;background:#f9fcff}.stat b{font-size:23px;color:var(--blue);display:block}.stat small{color:var(--muted)}.subject{display:flex;align-items:center;justify-content:space-between;gap:10px}.subject .emoji{font-size:25px}.subject button{white-space:nowrap}.table-wrap{overflow:auto}table{border-collapse:collapse;width:100%;min-width:520px}td,th{text-align:right;padding:10px;border-bottom:1px solid var(--line);font-size:13px}th{background:#f7fafc;color:var(--muted)}.avatar{width:66px;height:66px;border-radius:50%;object-fit:cover;background:#eaf5fd;border:2px solid #dceaf5}.topline{display:flex;align-items:center;gap:13px;flex-wrap:wrap}.item{border:1px solid var(--line);border-radius:12px;padding:13px;margin:9px 0;background:#fff}.item h4{margin:0 0 5px;color:var(--navy)}.item p{margin:4px 0}.footer{text-align:center;color:var(--muted);font-size:12px;padding:25px}pre{white-space:pre-wrap;direction:ltr;text-align:left;background:#102b46;color:#e6f2ff;padding:15px;border-radius:12px;overflow:auto;font-size:12px;max-height:360px}.copy{float:left}.pill{font-size:11px;background:#edf7ff;color:#1769aa;padding:3px 8px;border-radius:20px}
+.upload-box{border:2px dashed #b8ddf8;background:#f7fbff;border-radius:14px;padding:16px;text-align:center;display:flex;flex-direction:column;gap:10px;justify-content:space-between}
+.upload-box.exam{border-color:#f5c2c7;background:#fffafa}
+.upload-box h4{margin:0;color:var(--navy);font-size:16px}
+.exam-btn{background:#b42318;color:white}
+.sub-section{margin-top:18px;padding-top:14px;border-top:1px solid var(--line)}
+.sub-section h3{margin:0 0 10px;color:var(--navy);font-size:17px}
+.pdf-link{display:inline-block;margin-top:6px;background:#eaf5fd;color:var(--blue);padding:6px 12px;border-radius:8px;text-decoration:none;font-size:13px;font-weight:bold}
 @media(max-width:720px){.hero{grid-template-columns:1fr;padding:18px}.art{min-height:100px}.cards{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.full{grid-column:auto}.stats{grid-template-columns:1fr 1fr}.panel{padding:16px}header{padding:14px}nav{width:100%}nav button{flex:1}}
 </style>
 </head>
@@ -39,7 +46,7 @@
 </section>
 
 <section id="subjects" class="page hidden">
- <h2 class="section-title">المواد الدراسية – الفرقة الثانية</h2><p class="muted">اختار المادة لعرض بياناتها. ربط محتوى الجداول السبعة الموجودة يحتاج مطابقة اسم كل جدول الفعلي.</p>
+ <h2 class="section-title">المواد الدراسية – الفرقة الثانية</h2><p class="muted">اختر المادة لعرض المحاضرات والامتحانات الخاصة بها.</p>
  <div class="cards" id="subjectCards"></div>
  <div id="subjectDetails" class="panel hidden"></div>
 </section>
@@ -87,22 +94,43 @@
 <section id="admin" class="page hidden"><div class="panel">
  <h2>لوحة الإدارة</h2><p class="muted">تظهر فقط للحسابات التي تم تعيين role لها إلى admin داخل قاعدة البيانات.</p>
  <h3>نشر إعلان</h3><div class="field"><label>عنوان الإعلان</label><input id="annTitle"></div><div class="field" style="margin-top:8px"><label>نص الإعلان</label><textarea id="annBody" rows="3"></textarea></div><button id="annBtn" class="primary" style="margin-top:10px">نشر الإعلان</button><div id="annStatus" class="status"></div>
- <h3 style="margin-top:24px">إضافة مادة تعليمية / ملف</h3><div class="grid"><div class="field"><label>المادة</label><select id="materialSubject"></select></div><div class="field"><label>عنوان المحتوى</label><input id="materialTitle"></div><div class="field full"><label>رابط الملف أو المحاضرة</label><input id="materialUrl" type="url" placeholder="https://..."></div></div><button id="materialBtn" class="primary" style="margin-top:10px">إضافة المحتوى</button><div id="materialStatus" class="status"></div>
+
+ <h3 style="margin-top:24px">رفع ملفات PDF للمواد (محاضرات / امتحانات)</h3>
+ <div class="field" style="margin-bottom:14px">
+  <label>اختر المادة أولاً</label>
+  <select id="materialSubject"></select>
+ </div>
+
+ <div class="grid">
+  <div class="upload-box">
+   <h4>📚 المحاضرات</h4>
+   <p class="muted">سيتم رفع ملف الـ PDF وحفظه بنفس اسمه على الهاتف تلقائياً.</p>
+   <input type="file" id="lectureFileInput" accept=".pdf,application/pdf" multiple class="hidden">
+   <button type="button" class="primary" id="uploadLectureBtn">➕ إضافة محتوى (محاضرات PDF)</button>
+  </div>
+
+  <div class="upload-box exam">
+   <h4>📝 الامتحانات</h4>
+   <p class="muted">سيتم رفع ملف الامتحان الـ PDF وحفظه بنفس اسمه على الهاتف تلقائياً.</p>
+   <input type="file" id="examFileInput" accept=".pdf,application/pdf" multiple class="hidden">
+   <button type="button" class="exam-btn" id="uploadExamBtn">➕ إضافة محتوى (امتحانات PDF)</button>
+  </div>
+ </div>
+ <div id="materialStatus" class="status"></div>
+
  <h3 style="margin-top:24px">طلبات الدعم</h3><div id="adminTickets" class="muted">جارٍ التحميل...</div>
  <h3 style="margin-top:24px">ملاحظة صلاحيات</h3><p class="muted">لا تجعل حسابات الطلاب مسؤولة عن الإدارة. عيّن المدير يدويًا من SQL بعد التأكد من البريد الإلكتروني الصحيح.</p>
  </div></section>
 
 <section id="setup" class="page hidden"><div class="panel">
- <h2>إعداد قاعدة البيانات (مرة واحدة)</h2><p class="muted">انسخ SQL التالي إلى Supabase → SQL Editor ثم اضغط Run. هذا ينشئ جداول مساعدة فقط ولا يحذف أو يغيّر جداول المواد السبعة الموجودة.</p>
+ <h2>إعداد قاعدة البيانات (مرة واحدة)</h2><p class="muted">انسخ SQL التالي إلى Supabase → SQL Editor ثم اضغط Run.</p>
  <button class="soft copy" id="copySql">نسخ SQL</button><pre id="sqlBlock"></pre>
  <h3>تعيين حساب المدير</h3><p class="muted">بعد إنشاء حساب المدير وتأكيد بريده، غيّر البريد في الاستعلام التالي وشغّله مرة واحدة من SQL Editor:</p><pre>update public.profiles set role = 'admin' where id = (select id from auth.users where email = 'ضع-بريد-المدير-هنا');</pre>
- <p class="notice">بعد تشغيل SQL، أنشئ Storage bucket باسم avatars واجعله Private، ثم اضبط سياسات التخزين قبل تفعيل رفع الصور. رفع الصور غير مفعل في هذه النسخة. لا تشارك أي مفتاح سري أو service_role داخل هذا الملف.</p>
  </div></section>
 </main>
 <footer class="footer">منصة الفرقة الثانية شبكات كهربية • واجهة تعليمية مستقلة</footer>
 
 <script>
-/* بيانات الاتصال: المفتاح publishable عام ومخصص للواجهة. لا تضع service_role هنا. */
 const SUPABASE_URL = "https://ifgqkhhahvjqtvsyrcmq.supabase.co";
 const SUPABASE_ANON_KEY = "sb_publishable_lSJWvgGAxJdqMq1k1sfSrA_A4Maa84K";
 const SUBJECTS = ["إلكترونيات","معالجة وتحكمات","تحكم آلي","شبكات","تك ورش كهربية","أنظمة","ضبط جودة"];
@@ -110,6 +138,7 @@ const { createClient } = supabase;
 const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 let currentUser = null, currentProfile = null;
 const $ = id => document.getElementById(id);
+
 const sql = `create table if not exists public.profiles (
  id uuid primary key references auth.users(id) on delete cascade,
  full_name text not null default '',
@@ -132,6 +161,7 @@ create table if not exists public.materials (
  subject text not null,
  title text not null,
  url text not null,
+ category text default 'lecture',
  created_by uuid references auth.users(id),
  created_at timestamptz not null default now()
 );
@@ -143,45 +173,64 @@ create table if not exists public.support_tickets (
  status text not null default 'جديد',
  admin_reply text,
  created_at timestamptz not null default now()
-);
-alter table public.profiles enable row level security;
-create or replace function public.is_platform_admin() returns boolean
-language sql stable security definer set search_path = public
-as $$ select exists(select 1 from public.profiles where id = auth.uid() and role in ('admin','supervisor')) $$;
-alter table public.announcements enable row level security;
-alter table public.materials enable row level security;
-alter table public.support_tickets enable row level security;
-drop policy if exists "profile read own or admin" on public.profiles;
-create policy "profile read own or admin" on public.profiles for select to authenticated using (auth.uid() = id or public.is_platform_admin());
-drop policy if exists "profile insert own" on public.profiles;
-create policy "profile insert own" on public.profiles for insert to authenticated with check (auth.uid() = id and role='student');
-drop policy if exists "profile update own" on public.profiles;
-create policy "profile update own" on public.profiles for update to authenticated using (auth.uid()=id) with check (auth.uid()=id and role='student');
-drop policy if exists "announcements read" on public.announcements;
-create policy "announcements read" on public.announcements for select to authenticated using (true);
-drop policy if exists "announcements admin insert" on public.announcements;
-create policy "announcements admin insert" on public.announcements for insert to authenticated with check (public.is_platform_admin());
-drop policy if exists "materials read" on public.materials;
-create policy "materials read" on public.materials for select to authenticated using (true);
-drop policy if exists "materials admin insert" on public.materials;
-create policy "materials admin insert" on public.materials for insert to authenticated with check (public.is_platform_admin());
-drop policy if exists "ticket own or admin read" on public.support_tickets;
-create policy "ticket own or admin read" on public.support_tickets for select to authenticated using (auth.uid()=user_id or public.is_platform_admin());
-drop policy if exists "ticket own insert" on public.support_tickets;
-create policy "ticket own insert" on public.support_tickets for insert to authenticated with check (auth.uid()=user_id);
-drop policy if exists "ticket admin update" on public.support_tickets;
-create policy "ticket admin update" on public.support_tickets for update to authenticated using (public.is_platform_admin()) with check (public.is_platform_admin());
-`;
+);`;
 $("sqlBlock").textContent = sql;
+
 function status(id, text, ok=false){const el=$(id);el.textContent=text;el.className="status "+(ok?"ok":"error");}
 function showPage(id){document.querySelectorAll(".page").forEach(p=>p.classList.add("hidden"));$(id).classList.remove("hidden");document.querySelectorAll("nav [data-page]").forEach(b=>b.classList.toggle("active",b.dataset.page===id));window.scrollTo({top:0,behavior:"smooth"});if(id==="dashboard")loadDashboard();if(id==="admin")loadAdmin();}
 document.querySelectorAll("nav [data-page]").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
-function renderSubjects(){ $("subjectCards").innerHTML=SUBJECTS.map((s,i)=>`<div class="card subject"><div><div class="emoji">📘</div><h3>${s}</h3><p>مادة من مواد الفرقة الثانية</p></div><button class="soft" onclick="openSubject(${i})">فتح المادة</button></div>`).join("");$("materialSubject").innerHTML=SUBJECTS.map(s=>`<option>${s}</option>`).join("");}
-window.openSubject=async i=>{const name=SUBJECTS[i],box=$("subjectDetails");box.classList.remove("hidden");box.innerHTML=`<h2>${name}</h2><p class="muted">المحاضرات والملفات التي تضيفها الإدارة ستظهر هنا.</p><div id="subjectMaterials">جارٍ تحميل المحتوى...</div>`;showPage("subjects");const {data,error}=await db.from("materials").select("*").eq("subject",name).order("created_at",{ascending:false});$("subjectMaterials").innerHTML=error?`<p class="muted">تعذر تحميل المحتوى: ${error.message}</p>`:(data.length?data.map(m=>`<div class="item"><h4>${escapeHtml(m.title)}</h4><a href="${safeUrl(m.url)}" target="_blank" rel="noopener">فتح المحتوى</a></div>`).join(""):"<p class='muted'>لا يوجد محتوى مضاف لهذه المادة حتى الآن.</p>");};
+
+function renderSubjects(){
+ $("subjectCards").innerHTML=SUBJECTS.map((s,i)=>`<div class="card subject"><div><div class="emoji">📘</div><h3>${s}</h3><p>مادة من مواد الفرقة الثانية</p></div><button class="soft" onclick="openSubject(${i})">فتح المادة</button></div>`).join("");
+ $("materialSubject").innerHTML=SUBJECTS.map(s=>`<option>${s}</option>`).join("");
+}
+
+window.openSubject=async i=>{
+ const name=SUBJECTS[i],box=$("subjectDetails");
+ box.classList.remove("hidden");
+ box.innerHTML=`<h2>${name}</h2><div id="subjectMaterials">جارٍ تحميل المحتوى...</div>`;
+ showPage("subjects");
+ const {data,error}=await db.from("materials").select("*").eq("subject",name).order("created_at",{ascending:false});
+ if(error){
+  $("subjectMaterials").innerHTML=`<p class="muted">تعذر تحميل المحتوى: ${error.message}</p>`;
+  return;
+ }
+ const lectures = data.filter(m => m.category !== "exam");
+ const exams = data.filter(m => m.category === "exam");
+
+ const renderList = (list, emptyMsg) => list.length
+  ? list.map(m=>`<div class="item"><h4>📄 ${escapeHtml(m.title)}</h4><a class="pdf-link" href="${safeUrl(m.url)}" target="_blank" rel="noopener">📥 فتح / تحميل الملف (PDF)</a></div>`).join("")
+  : `<p class="muted">${emptyMsg}</p>`;
+
+ $("subjectMaterials").innerHTML = `
+  <div class="sub-section">
+   <h3>📚 المحاضرات</h3>
+   ${renderList(lectures, "لا توجد محاضرات مضافة لهذه المادة حتى الآن.")}
+  </div>
+  <div class="sub-section">
+   <h3>📝 الامتحانات</h3>
+   ${renderList(exams, "لا توجد امتحانات مضافة لهذه المادة حتى الآن.")}
+  </div>
+ `;
+};
+
 function escapeHtml(s=""){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
 function safeUrl(s=""){try{const u=new URL(s);return ["https:","http:"].includes(u.protocol)?u.href:"#"}catch{return "#"}}
 function setAuthUI(){document.querySelectorAll("[data-guest]").forEach(x=>x.classList.toggle("hidden",!!currentUser));document.querySelectorAll("[data-user]").forEach(x=>x.classList.toggle("hidden",!currentUser));document.querySelectorAll("[data-admin]").forEach(x=>x.classList.toggle("hidden",!(currentProfile&&currentProfile.role==="admin")));$("logout").classList.toggle("hidden",!currentUser);}
-async function refreshProfile(){if(!currentUser)return;let {data}=await db.from("profiles").select("*").eq("id",currentUser.id).maybeSingle();if(!data){const m=currentUser.user_metadata||{};const row={id:currentUser.id,full_name:m.full_name||currentUser.email||"طالب",student_code:m.student_code||null,age:m.age||null,phone:m.phone||null,role:"student"};const ins=await db.from("profiles").upsert(row).select().maybeSingle();data=ins.data;}currentProfile=data;setAuthUI();}
+
+async function refreshProfile(){
+ if(!currentUser)return;
+ let {data}=await db.from("profiles").select("*").eq("id",currentUser.id).maybeSingle();
+ if(!data){
+  const m=currentUser.user_metadata||{};
+  const row={id:currentUser.id,full_name:m.full_name||currentUser.email||"طالب",student_code:m.student_code||null,age:m.age||null,phone:m.phone||null,role:"student"};
+  const ins=await db.from("profiles").upsert(row).select().maybeSingle();
+  data=ins.data;
+ }
+ currentProfile=data;
+ setAuthUI();
+}
+
 $("registerBtn").onclick=async()=>{
  const name=$("regName").value.trim(),email=$("regEmail").value.trim(),pw=$("regPassword").value,code=$("regCode").value.trim();
  if(!name||!email||!pw||!code)return status("regStatus","أكمل الاسم والكود الدراسي والبريد وكلمة المرور.");
@@ -198,16 +247,81 @@ $("registerBtn").onclick=async()=>{
   currentUser=data.user;await refreshProfile();status("regStatus","تم إنشاء الحساب بنجاح.",true);showPage("dashboard");
  }else status("regStatus","تم إرسال رسالة تأكيد إلى بريدك الإلكتروني. افتح الرسالة لتأكيد الحساب ثم سجّل الدخول.",true);
 };
+
 $("loginBtn").onclick=async()=>{const {data,error}=await db.auth.signInWithPassword({email:$("loginEmail").value.trim(),password:$("loginPassword").value});if(error)return status("loginStatus",error.message);currentUser=data.user;await refreshProfile();status("loginStatus","تم تسجيل الدخول.",true);showPage("dashboard");};
 $("logout").onclick=async()=>{await db.auth.signOut();currentUser=null;currentProfile=null;setAuthUI();showPage("home");};
+
 async function loadAnnouncements(target){const {data,error}=await db.from("announcements").select("*").order("created_at",{ascending:false}).limit(10);$(target).innerHTML=error?`<p class="muted">تعذر تحميل الإعلانات.</p>`:data.length?data.map(a=>`<div class="item"><h4>${escapeHtml(a.title)}</h4><p>${escapeHtml(a.body)}</p><small class="muted">${new Date(a.created_at).toLocaleString("ar-EG")}</small></div>`).join(""):"<p class='muted'>لا توجد إعلانات حتى الآن.</p>";}
 async function loadDashboard(){if(!currentUser)return;await refreshProfile();$("profileName").textContent=currentProfile?.full_name||currentUser.email;$("profileEmail").textContent=currentUser.email;$("profileAvatar").src=currentProfile?.avatar_url||"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80'%3E%3Crect width='100%25' height='100%25' fill='%23eaf5fd'/%3E%3Ctext x='50%25' y='58%25' text-anchor='middle' font-size='38'%3E%F0%9F%91%A4%3C/text%3E%3C/svg%3E";$("profileInfo").innerHTML=`الاسم: ${escapeHtml(currentProfile?.full_name||"—")}<br>الكود الدراسي: ${escapeHtml(currentProfile?.student_code||"—")}<br>الهاتف: ${escapeHtml(currentProfile?.phone||"—")}<br>السن: ${escapeHtml(currentProfile?.age||"—")}`;const {data:tickets}=await db.from("support_tickets").select("id").eq("user_id",currentUser.id);$("statTickets").textContent=tickets?.length??"—";$("statJoined").textContent=currentProfile?.role==="admin"?"مدير":"طالب";const {data,error}=await db.from("support_tickets").select("*").eq("user_id",currentUser.id).order("created_at",{ascending:false});$("myTickets").innerHTML=error?"تعذر تحميل الطلبات.":data.length?data.map(t=>`<div class="item"><b>${escapeHtml(t.subject)}</b><p>${escapeHtml(t.body)}</p><span class="pill">${escapeHtml(t.status)}</span>${t.admin_reply?`<p>رد الإدارة: ${escapeHtml(t.admin_reply)}</p>`:""}</div>`).join(""):"<p class='muted'>لم ترسل طلبات دعم بعد.</p>";await loadAnnouncements("dashboardAnnouncements");}
+
 $("ticketBtn").onclick=async()=>{if(!currentUser){showPage("login");return status("ticketStatus","سجّل الدخول أولًا لإرسال استفسار.");}const subject=$("ticketSubject").value.trim(),body=$("ticketBody").value.trim();if(!subject||!body)return status("ticketStatus","اكتب موضوع الاستفسار والتفاصيل.");const {error}=await db.from("support_tickets").insert({user_id:currentUser.id,subject,body});if(error)return status("ticketStatus",error.message);$("ticketSubject").value="";$("ticketBody").value="";status("ticketStatus","تم إرسال طلب الدعم بنجاح.",true);};
+
 async function loadAdmin(){if(!currentUser||currentProfile?.role!=="admin")return;const {data,error}=await db.from("support_tickets").select("*").order("created_at",{ascending:false}).limit(50);$("adminTickets").innerHTML=error?`تعذر تحميل الطلبات: ${escapeHtml(error.message)}`:data.length?data.map(t=>`<div class="item"><h4>${escapeHtml(t.subject)} <span class="pill">${escapeHtml(t.status)}</span></h4><p>${escapeHtml(t.body)}</p><small>${escapeHtml(t.user_id)}</small><div class="field" style="margin-top:8px"><label>رد الإدارة</label><input id="reply${t.id}" value="${escapeHtml(t.admin_reply||"")}"></div><button class="soft" onclick="replyTicket(${t.id})">حفظ الرد</button><button class="soft" onclick="closeTicket(${t.id})">تم الحل</button></div>`).join(""):"لا توجد طلبات دعم.";}
 window.replyTicket=async id=>{const reply=$("reply"+id).value;const {error}=await db.from("support_tickets").update({admin_reply:reply,status:"تم الرد"}).eq("id",id);if(error)alert(error.message);else loadAdmin();};
 window.closeTicket=async id=>{const {error}=await db.from("support_tickets").update({status:"تم الحل"}).eq("id",id);if(error)alert(error.message);else loadAdmin();};
 $("annBtn").onclick=async()=>{if(!currentUser)return;const title=$("annTitle").value.trim(),body=$("annBody").value.trim();if(!title||!body)return status("annStatus","اكتب عنوان الإعلان ونصه.");const {error}=await db.from("announcements").insert({title,body,created_by:currentUser.id});if(error)return status("annStatus",error.message);$("annTitle").value=$("annBody").value="";status("annStatus","تم نشر الإعلان.",true);loadAnnouncements("homeAnnouncements");};
-$("materialBtn").onclick=async()=>{const subject=$("materialSubject").value,title=$("materialTitle").value.trim(),url=$("materialUrl").value.trim();if(!title||!url)return status("materialStatus","أدخل عنوان المحتوى والرابط.");if(!safeUrl(url)||safeUrl(url)==="#")return status("materialStatus","الرابط غير صالح.");const {error}=await db.from("materials").insert({subject,title,url,created_by:currentUser.id});if(error)return status("materialStatus",error.message);$("materialTitle").value=$("materialUrl").value="";status("materialStatus","تمت إضافة المحتوى.",true);};
+
+/* رفع ملفات PDF مباشرة من الهاتف مع الحفاظ على اسم الملف الأصلي */
+async function handlePdfUpload(files, category) {
+ if (!files || !files.length) return;
+ const subject = $("materialSubject").value;
+ $("uploadLectureBtn").disabled = true;
+ $("uploadExamBtn").disabled = true;
+ status("materialStatus", `جارٍ رفع ${files.length} ملف... يرجى الانتظار...`, true);
+
+ let uploadedCount = 0;
+ for (const file of files) {
+  const originalTitle = file.name.replace(/\.pdf$/i, "");
+  const storagePath = `${Date.now()}_${Math.random().toString(36).slice(2, 8)}.pdf`;
+
+  const { error: uploadError } = await db.storage.from("pdfs").upload(storagePath, file, {
+   contentType: "application/pdf",
+   upsert: false
+  });
+
+  if (uploadError) {
+   $("uploadLectureBtn").disabled = false;
+   $("uploadExamBtn").disabled = false;
+   return status("materialStatus", `فشل رفع الملف (${file.name}): ${uploadError.message}`);
+  }
+
+  const { data: publicUrlData } = db.storage.from("pdfs").getPublicUrl(storagePath);
+
+  const { error: dbError } = await db.from("materials").insert({
+   subject,
+   title: originalTitle,
+   url: publicUrlData.publicUrl,
+   category,
+   created_by: currentUser.id
+  });
+
+  if (dbError) {
+   $("uploadLectureBtn").disabled = false;
+   $("uploadExamBtn").disabled = false;
+   return status("materialStatus", `تم رفع الملف ولكن تعذر حفظه في الجدول: ${dbError.message}`);
+  }
+  uploadedCount++;
+ }
+
+ $("uploadLectureBtn").disabled = false;
+ $("uploadExamBtn").disabled = false;
+ const typeLabel = category === "exam" ? "امتحانات" : "محاضرات";
+ status("materialStatus", `تم رفع ${uploadedCount} ملف في قسم (${typeLabel}) لمادة (${subject}) بنجاح!`, true);
+}
+
+$("uploadLectureBtn").onclick = () => $("lectureFileInput").click();
+$("uploadExamBtn").onclick = () => $("examFileInput").click();
+
+$("lectureFileInput").onchange = async (e) => {
+ await handlePdfUpload(e.target.files, "lecture");
+ e.target.value = "";
+};
+
+$("examFileInput").onchange = async (e) => {
+ await handlePdfUpload(e.target.files, "exam");
+ e.target.value = "";
+};
+
 $("copySql").onclick=async()=>{try{await navigator.clipboard.writeText(sql);$("copySql").textContent="تم النسخ";}catch{$("copySql").textContent="حدد SQL وانسخه";}};
 db.auth.getSession().then(async({data})=>{currentUser=data.session?.user||null;if(currentUser)await refreshProfile();else setAuthUI();loadAnnouncements("homeAnnouncements");});
 db.auth.onAuthStateChange(async(_event,session)=>{currentUser=session?.user||null;if(currentUser)await refreshProfile();else{currentProfile=null;setAuthUI();}});
